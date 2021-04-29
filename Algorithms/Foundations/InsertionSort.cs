@@ -5,20 +5,20 @@ namespace Algorithms.Foundations
 {
     public static class InsertionSort
     {
-        public static void Sort<T>(IList<T> collection) where T : IComparable
+        public static void Sort<T>(IList<T> input) where T : IComparable
         {
-            for (var i = 1; i < collection.Count; i++)
+            for (var i = 1; i < input.Count; i++)
             {
-                var key = collection[i];
+                var key = input[i];
                 var j = i - 1;
 
-                while (j >= 0 && collection[j].CompareTo(key) == 1)
+                while (j >= 0 && input[j].CompareTo(key) == 1)
                 {
-                    collection[j + 1] = collection[j];
+                    input[j + 1] = input[j];
                     j--;
                 }
 
-                collection[j + 1] = key;
+                input[j + 1] = key;
             }
         }
     }

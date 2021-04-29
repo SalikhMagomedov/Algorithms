@@ -15,21 +15,21 @@ namespace TestAlgorithms.Foundations
         [Test]
         public void Sort_SomeIntArray_SortedIntArray()
         {
-            var array = new[] {2, 4, 5, 6, 1, 3};
+            var input = new[] {2, 4, 5, 6, 1, 3};
 
-            InsertionSort.Sort(array);
+            InsertionSort.Sort(input);
 
-            array.Should().Equal(1, 2, 3, 4, 5, 6);
+            input.Should().Equal(1, 2, 3, 4, 5, 6);
         }
         
         [Test]
         public void Sort_SomeStringList_SortedStringList()
         {
-            var array = new List<string> {"B", "D", "E", "F", "A", "C"};
+            var input = new List<string> {"B", "D", "E", "F", "A", "C"};
 
-            InsertionSort.Sort(array);
+            InsertionSort.Sort(input);
 
-            array.Should().Equal("A", "B", "C", "D", "E", "F");
+            input.Should().Equal("A", "B", "C", "D", "E", "F");
         }
     }
 }
