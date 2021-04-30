@@ -45,7 +45,7 @@ namespace Algorithms.Foundations
                 {
                     input[k] = leftCollection[i++];
                 }
-                else if (leftCollection[i].CompareTo(rightCollection[j]) is -1 or 0)
+                else if (leftCollection[i].CompareTo(rightCollection[j]) != 1)
                 {
                     input[k] = leftCollection[i++];
                 }
