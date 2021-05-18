@@ -1,4 +1,4 @@
-﻿namespace Algorithms.Foundations
+﻿namespace Algorithms.Other
 {
     public static class SquareMatrixMultiplicationAlgorithm
     {

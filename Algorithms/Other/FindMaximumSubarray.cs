@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Algorithms.Foundations
+namespace Algorithms.Other
 {
     public static class FindMaximumSubarray
     {

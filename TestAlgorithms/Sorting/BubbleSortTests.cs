@@ -1,8 +1,8 @@
-﻿using Algorithms.Foundations;
+﻿using Algorithms.Sorting;
 using FluentAssertions;
 using NUnit.Framework;
 
-namespace TestAlgorithms.Foundations
+namespace TestAlgorithms.Sorting
 {
     public class BubbleSortTests
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Algorithms.Foundations
+namespace Algorithms.Sorting
 {
     public static class BubbleSort
     {

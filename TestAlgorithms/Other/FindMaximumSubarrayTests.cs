@@ -1,8 +1,8 @@
-﻿using Algorithms.Foundations;
+﻿using Algorithms.Other;
 using FluentAssertions;
 using NUnit.Framework;
 
-namespace TestAlgorithms.Foundations
+namespace TestAlgorithms.Other
 {
     public class FindMaximumSubarrayTests
     {
