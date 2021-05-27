@@ -12,12 +12,13 @@ namespace Algorithms.Sorting
 
         private static void Sort<T>(IList<T> input, int left, int right) where T : IComparable
         {
-            if (left >= right) return;
-            
-            var partition = Partition(input, left, right);
+            while (left < right)
+            {
+                var partition = Partition(input, left, right);
 
-            Sort(input, left, partition - 1);
-            Sort(input, partition + 1, right);
+                Sort(input, left, partition - 1);
+                left = partition + 1;
+            }
         }
 
         private static int Partition<T>(IList<T> input, int left, int right) where T : IComparable
