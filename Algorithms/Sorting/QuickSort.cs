@@ -10,6 +10,15 @@ namespace Algorithms.Sorting
             Sort(input, 0, input.Count - 1);
         }
 
+        public static int RandomizedPartition<T>(this IList<T> input, int left, int right, Random rand) where T : IComparable
+        {
+            var index = rand.Next(left, right + 1);
+
+            (input[right], input[index]) = (input[index], input[right]);
+
+            return Partition(input, left, right);
+        }
+
         private static void Sort<T>(IList<T> input, int left, int right) where T : IComparable
         {
             while (left < right)
@@ -29,7 +38,7 @@ namespace Algorithms.Sorting
             for (var j = left; j < right; j++)
             {
                 if (input[j].CompareTo(x) == 1) continue;
-                
+
                 i++;
                 (input[i], input[j]) = (input[j], input[i]);
             }
